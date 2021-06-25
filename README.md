@@ -25,7 +25,7 @@ So far, we have created an non-optimized empty CNN. Then I set an optimizer with
 
 ```python
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-model.fit(x=x_train,y=y_train, epochs=10)
+model.fit(x=train_X,y=train_y, epochs=10)
 ```
 
 Here we get pretty high accuracy with just 10 epochs. Since the dataset doesn’t need heavy computational power you can play around with the number of epochs you can also play around with the optimizer, loss function and metrics.
